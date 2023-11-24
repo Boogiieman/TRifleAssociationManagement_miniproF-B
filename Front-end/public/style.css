@@ -1,0 +1,112 @@
+.form-row {
+  padding: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  /* Allows vertical resizing */
+}
+
+.Uform {
+  color: grey;
+}
+
+.vl {
+  border-left: 6px solid grey;
+  width: 500px;
+}
+
+.pro-sidebar {
+  position: fixed;
+}
+
+.sidebar {
+  width: 20%;
+  height: 649px;
+}
+
+.li {
+  font-weight: bolder;
+  text-decoration: none;
+  color: inherit;
+  padding: 10px;
+  display: block;
+  font-size: 20px;
+}
+
+.li:hover:not(.active) {
+  background-color: #444;
+  color: #fff;
+}
+hr.underline {
+  border-top: 8px solid #111010;
+  border-radius: 5px;
+}
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+
+.main-heading {
+  text-align: center;
+  color: grey;
+  font-weight: bolder;
+  font-family: emoji;
+  font-size: 50px;
+  padding: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.mainDiv {
+  max-width: "0px";
+  padding: "0px";
+}
+
+.subDiv {
+  margin-left: "10px";
+  margin-right: "10px";
+}
+
+/* styles.css */
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.TbCircleFilled {
+  animation: beat 1s infinite;
+  /* Adjust the duration as needed */
+}
+
+tr {
+  text-align: center;
+}
+
+.color {
+  vertical-align: "middle";
+  color: gray;
+  font-weight: "bold";
+  
+}
+
+.form-check-input[type=checkbox] {
+  border-color: midnightblue;
+}

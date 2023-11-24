@@ -1,0 +1,42 @@
+/* SideNav.css */
+.sidebar-content {
+  height: 100vh; /* Set sidebar height to max screen height */
+}
+
+.collapsible {
+  justify-content: left;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(to right, rgba(23, 162, 179, 0.2) 0%, transparent 100%);
+  color : #fff;
+}
+
+.collapsible button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+}
+
+.sidebar-collapsed .pro-sidebar {
+  width: 80px; /* Adjust width when collapsed */
+}
+
+.sidebar-collapsed .pro-sidebar .sidebar-content {
+  display: none; /* Hide content when collapsed */
+}
+.pro-sidebar{
+  width: 195px;
+  min-width: 195px;
+}
+/* Add styles for the hover effect */
+.pro-sidebar .pro-menu li:hover {
+  background: linear-gradient(to right, rgba(23, 162, 179, 0.2) 0%, transparent 100%);/* Change the background color on hover */
+}
+
+/* Add styles for the collapsed state */
+.sidebar-content {
+  background: linear-gradient(to left, rgba(23, 162, 179, 0.2) 0%, transparent 100%); /* Change the background color on hover when collapsed */
+}
