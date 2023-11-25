@@ -30,6 +30,15 @@ import EventFeesVerification from "./event staff login (association)/EventFeesVe
 import MembershipFormDetails from "./user/Membership/MembershipFormDetails";
 import EventsEligible from "./user/ChampionshipEvent/EventsEligible";
 import MembershipVerification from "./user/Membership/Membership_Verification";
+import MembershipApplicationDetails from "./user/Membership/MembershipApplicationDetails";
+import MembershipApproval from "./user/Membership/MembershipApproval";
+import MembershipApprovalApplicationDetails from "./user/Membership/MembershipApprovalApplicationDetails";
+import ParticipantsList from "./staff login (association)/EventWiseParticipationList";
+import ScoreEntry from "./staff login (association)/EventScore";
+import GenerateRankList from "./staff login (association)/GenerateRankList";
+import DownloadCertificate from "./user/DownloadCertificate";
+import ComputerCardPdf from "./user/Computer_CardPdf";
+import IDCardpdf from "./user/IDCardpdf";
 
 function App(){
     return (
@@ -46,6 +55,12 @@ function App(){
         <Route path = '/membershipformdetails' element={<MembershipFormDetails/>} />
         <Route path = '/TransactionMembership' element={<MembershipTransaction />} />
         <Route path = '/membershipVerification' element={<MembershipVerification />} />
+        <Route path = '/ApplicationDetails' element={<MembershipApplicationDetails />} />
+        <Route path = '/MembershipApproval' element={<MembershipApproval />} />
+        <Route path = '/MembershipApprovalApplicationDetails' element={<MembershipApprovalApplicationDetails />} />
+        <Route path = '/DownloadCertificate' element={<DownloadCertificate />} />
+        <Route path = '/ComputerCardPdf' element={<ComputerCardPdf />} />
+        <Route path = '/IDCardpdf' element={<IDCardpdf />} />
 
         <Route path = '/ChampionshipSelection' element={<ChampionshipSelection />} />
         <Route path = '/EventsEligible' element={<EventsEligible />} />
@@ -70,6 +85,9 @@ function App(){
 
         <Route path = '/MembershipFeesVerification' element={<MembershipFeesVerification />} />
         <Route path= '/TransactionDetailsVerification' element={<TransactionDetailsVerification />} />
+        <Route path = '/ParticipantsList' element={<ParticipantsList />} />
+        <Route path = '/ScoreEntry' element={<ScoreEntry />} />
+        <Route path = '/GenerateRankList' element={<GenerateRankList />} />
 
         <Route path= '/EventFeesVerification' element={<EventFeesVerification />} />
 

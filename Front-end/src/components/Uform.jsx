@@ -86,16 +86,19 @@ function Uform() {
           </Form>
         </Col>
 
-        <Col md={2}>
-    <h6 style={{ textAlign: 'left', color: 'gray', fontWeight: 'bold' }}>Upload Receipt</h6>
-  </Col>
-
-  <Col md={5} className="custom-file-input">
-    <label htmlFor="receiptFile" className="custom-file-label">
-      Choose File
-    </label>
-    <input type="file" id="receiptFile" className="custom-file-input" accept=".pdf, .jpg, .jpeg, .png" required />
-  </Col>
+        <Col md>
+          <div>
+            <div className="d-flex justify-content-center mb-4">
+              <img id="selectedAvatar" src={selectedImageSrc} className="rounded-circle" style={{ width: "200px", height: "200px", objectFit: "cover" }} alt="example placeholder" />
+            </div>
+            <div className="d-flex justify-content-center">
+              <div className="btn btn-info btn-rounded">
+                <label className="form-label text-white m-1" htmlFor="customFile2">Upload Image</label>
+                <input type="file" className="form-control d-none" id="customFile2" onChange={displaySelectedImage} />
+              </div>
+            </div>
+          </div>
+        </Col>
       </Row>
 
       <hr className="rounded" />

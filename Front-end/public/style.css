@@ -110,3 +110,8 @@ tr {
 .form-check-input[type=checkbox] {
   border-color: midnightblue;
 }
+p.round3 {
+  border: 2px solid gray;
+  border-radius: 12px;
+  padding: 5px;
+}
